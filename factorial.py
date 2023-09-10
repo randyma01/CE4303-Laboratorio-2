@@ -1,4 +1,6 @@
 import sys
+from timeit import default_timer as timer
+
 
 def factorial(num):
     if num == 1 or 0:
@@ -8,6 +10,14 @@ def factorial(num):
 
 
 num = int(sys.argv[1])
+start = timer()
 facto = factorial(num)
+end = timer()
+elapse_time = end - start
 
-print(f"Factorial of {num} is: {facto}")
+print('\n')
+print(f"-------------------------------------")
+print(f"Factorial of {num}: {facto}\n")
+print(f"Elapse time: {elapse_time}")
+print(f"-------------------------------------")
+print('\n')

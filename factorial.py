@@ -13,11 +13,10 @@ num = int(sys.argv[1])
 start = timer()
 facto = factorial(num)
 end = timer()
-elapse_time = end - start
+elapsed_time = end - start
 
-print('\n')
+
 print(f"-------------------------------------")
 print(f"Factorial of {num}: {facto}\n")
-print(f"Elapse time: {elapse_time}")
+print(f"Elapsed time: {elapsed_time}")
 print(f"-------------------------------------")
-print('\n')

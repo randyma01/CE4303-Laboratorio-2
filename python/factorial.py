@@ -4,10 +4,10 @@ from timeit import default_timer as timer
 
 def factorial(num):
     if num == 1 or 0:
-        print(f"Recursion: end by condition\n")
+        # print(f"Recursion: end by condition\n")
         return 1
     else:
-        print(f"Recursion: #{num}")
+        # print(f"Recursion: #{num}")
         return num * factorial(num - 1)
 
 

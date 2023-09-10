@@ -32,10 +32,12 @@ unsigned long long factorial(long num)
 {
     if (num == 0 || num == 1)
     {
+        printf("Recursion: end by condition\n");
         return 1;
     }
     else
     {
+        printf("Recursion: #%ld\n", num);
         return num * factorial(num - 1);
     }
 }

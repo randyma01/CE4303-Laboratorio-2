@@ -3,6 +3,7 @@
 #include <time.h>
 
 unsigned long long factorial(long);
+void delay(int milli_seconds);
 
 int main(int argc, char *argv[])
 {
@@ -28,6 +29,17 @@ int main(int argc, char *argv[])
     return 0;
 }
 
+void delay(int milliseconds)
+{
+    long pause;
+    clock_t now, then;
+
+    pause = milliseconds * (CLOCKS_PER_SEC / 1000);
+    now = then = clock();
+    while ((now - then) < pause)
+        now = clock();
+}
+
 unsigned long long factorial(long num)
 {
     if (num == 0 || num == 1)
@@ -37,6 +49,7 @@ unsigned long long factorial(long num)
     }
     else
     {
+        delay(5000);
         printf("Recursion: #%ld\n", num);
         return num * factorial(num - 1);
     }

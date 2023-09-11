@@ -29,12 +29,12 @@ int main(int argc, char *argv[])
     return 0;
 }
 
-void delay(int milliseconds)
+void delay(int milli_seconds)
 {
     long pause;
     clock_t now, then;
 
-    pause = milliseconds * (CLOCKS_PER_SEC / 1000);
+    pause = milli_seconds * (CLOCKS_PER_SEC / 1000);
     now = then = clock();
     while ((now - then) < pause)
         now = clock();

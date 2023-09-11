@@ -3,7 +3,7 @@
 #include <time.h>
 
 unsigned long long factorial(long);
-void delay(int milli_seconds);
+void delay(int);
 
 int main(int argc, char *argv[])
 {

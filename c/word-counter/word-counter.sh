@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# compile the Factorial Function with Makefile
-echo 'Executing the Factorial Function Makefile...'
+# compile the Word Counter Function with Makefile
+echo 'Executing the Word Counter Function Makefile...'
 make clean
-make factorial
+make word-counter

@@ -14,7 +14,7 @@ int main()
     FILE *file = fopen(file_name, "r");
     if (file == NULL)
     {
-        perror("Could not open the file");
+        perror("Could not open the file.");
         return 1;
     }
 
